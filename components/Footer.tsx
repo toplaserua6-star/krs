@@ -17,6 +17,8 @@ export function Footer() {
           <div>
             <h4 className="text-white font-semibold mb-4">Навигация</h4>
             <ul className="space-y-2 text-sm">
+              <li><a href="/" className="hover:text-white transition-colors">Главная</a></li>
+              <li><a href="/for-marketers" className="hover:text-white transition-colors">Для маркетологов</a></li>
               <li><a href="#features" className="hover:text-white transition-colors">Возможности</a></li>
               <li><a href="#benefits" className="hover:text-white transition-colors">Преимущества</a></li>
               <li><a href="#pricing" className="hover:text-white transition-colors">Цены</a></li>

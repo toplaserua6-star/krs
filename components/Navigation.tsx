@@ -21,6 +21,7 @@ export function Navigation() {
     { href: '#how-it-works', label: 'Как это работает' },
     { href: '#pricing', label: 'Цены' },
     { href: '#faq', label: 'FAQ' },
+    { href: '/for-marketers', label: 'Для маркетологов', external: false },
   ]
 
   return (
@@ -34,7 +35,7 @@ export function Navigation() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-20">
           <div className="flex-shrink-0">
-            <a href="#" className="text-2xl font-bold gradient-text">
+            <a href="/" className="text-2xl font-bold gradient-text">
               ChatGPT 5.0
             </a>
           </div>
@@ -52,12 +53,10 @@ export function Navigation() {
                 </a>
               ))}
               <a
-                href="https://t.me/tribute/app?startapp=pm9H"
-                target="_blank"
-                rel="noopener noreferrer"
+                href="#pricing"
                 className="bg-gradient-to-r from-blue-600 to-purple-600 text-white px-6 py-2 rounded-full text-sm font-semibold hover:shadow-lg transform hover:scale-105 transition-all"
               >
-                Получить Мощные Промпты
+                💳 Оплатить $33
               </a>
             </div>
           </div>
@@ -89,13 +88,11 @@ export function Navigation() {
               </a>
             ))}
             <a
-              href="https://t.me/tribute/app?startapp=pm9H"
-              target="_blank"
-              rel="noopener noreferrer"
+              href="#pricing"
               className="bg-gradient-to-r from-blue-600 to-purple-600 text-white block px-6 py-3 rounded-full text-center font-semibold mt-4"
               onClick={() => setIsMobileMenuOpen(false)}
             >
-              Получить Мощные Промпты
+              💳 Оплатить $33
             </a>
           </div>
         </div>

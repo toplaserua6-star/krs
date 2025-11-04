@@ -2,6 +2,7 @@
 
 import { motion } from 'framer-motion'
 import { Check, Star } from 'lucide-react'
+import { LavaPaymentWidget } from './LavaPaymentWidget'
 
 const plans = [
   {
@@ -83,14 +84,9 @@ export function Pricing() {
                   ))}
                 </ul>
 
-                <a
-                  href="https://t.me/tribute/app?startapp=pm9H"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="block w-full py-5 rounded-full font-bold text-xl transition-all duration-300 bg-gradient-to-r from-orange-500 to-red-500 hover:shadow-2xl hover:shadow-orange-500/50 transform hover:scale-105 text-center"
-                >
-                  🔥 Получить доступ сейчас
-                </a>
+                <div className="flex flex-col items-center">
+                  <LavaPaymentWidget width={300} height={100} />
+                </div>
               </div>
             </motion.div>
           ))}
@@ -103,8 +99,11 @@ export function Pricing() {
           transition={{ duration: 0.6, delay: 0.4 }}
           className="mt-16 text-center"
         >
-          <p className="text-gray-400 mb-4">
+          <p className="text-gray-400 mb-2">
             💳 Принимаем все виды оплаты • 🔒 Безопасная оплата • 💯 Гарантия возврата 14 дней
+          </p>
+          <p className="text-gray-500 text-sm">
+            После оплаты вы получите письмо с доступом к курсу
           </p>
         </motion.div>
       </div>

@@ -4,7 +4,7 @@ import { motion } from 'framer-motion'
 import { ArrowRight, Sparkles } from 'lucide-react'
 import { LavaPaymentWidget } from './LavaPaymentWidget'
 
-export function CTA() {
+export function CTAMarketers() {
   return (
     <section className="py-24 bg-gradient-to-br from-blue-600 via-purple-600 to-pink-600 text-white relative overflow-hidden">
       {/* Animated background elements */}
@@ -33,37 +33,41 @@ export function CTA() {
           </motion.div>
 
           <h2 className="text-4xl md:text-6xl font-black mb-6 leading-tight">
-            Готовы освоить ChatGPT<br />и увеличить продуктивность?
+            Получи полный набор<br />
+            <span className="text-yellow-300">Super Prompts for Marketers</span>
+            <br />
+            всего за $33
           </h2>
 
           <p className="text-xl md:text-2xl mb-10 text-white/90 leading-relaxed">
-            Присоединяйтесь к 5000+ студентам, которые уже трансформировали<br className="hidden md:block" />
-            свою работу с помощью искусственного интеллекта
+            Готовые промты для создания контента, рекламы и контент-планов
+            <br className="hidden md:block" />
+            Экономьте часы работы каждый день
           </p>
 
-          <div className="flex flex-col items-center mb-8">
-            <LavaPaymentWidget width={300} height={100} className="mb-6" />
-            <a
-              href="#how-it-works"
-              className="text-white border-2 border-white px-10 py-5 rounded-full text-lg font-bold hover:bg-white hover:text-blue-600 transition-all"
-            >
-              Узнать подробнее
-            </a>
-          </div>
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.5, delay: 0.2 }}
+            className="flex flex-col items-center mb-8"
+          >
+            <LavaPaymentWidget width={300} height={100} />
+          </motion.div>
 
-          <div className="flex items-center justify-center gap-8 text-sm">
+          <div className="flex items-center justify-center gap-8 text-sm flex-wrap">
             <div className="flex items-center gap-2">
               <svg className="w-5 h-5 text-green-300" fill="currentColor" viewBox="0 0 20 20">
                 <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
               </svg>
-              <span>Гарантия возврата 14 дней</span>
+              <span>Мгновенный доступ</span>
             </div>
             <div className="hidden sm:block w-px h-4 bg-white/30"></div>
             <div className="flex items-center gap-2">
               <svg className="w-5 h-5 text-green-300" fill="currentColor" viewBox="0 0 20 20">
                 <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
               </svg>
-              <span>Мгновенный доступ</span>
+              <span>Гарантия качества</span>
             </div>
           </div>
         </motion.div>
@@ -71,3 +75,4 @@ export function CTA() {
     </section>
   )
 }
+
