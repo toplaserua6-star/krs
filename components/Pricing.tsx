@@ -1,14 +1,14 @@
 'use client'
 
 import { motion } from 'framer-motion'
-import { Check, Star } from 'lucide-react'
-import { LavaPaymentWidget } from './LavaPaymentWidget'
+import { Check } from 'lucide-react'
+import { OrderForm } from './OrderForm'
 
 const plans = [
   {
     name: 'ChatGPT 5.0',
-    price: '33',
-    oldPrice: '66',
+    price: '11',
+    oldPrice: '22',
     period: 'разовый платеж в долларах',
     description: '🔥 АКЦИЯ -50%',
     features: [
@@ -85,7 +85,11 @@ export function Pricing() {
                 </ul>
 
                 <div className="flex flex-col items-center">
-                  <LavaPaymentWidget width={300} height={100} />
+                  <OrderForm
+                    source={`pricing-${plan.name}`}
+                    formId="order-form"
+                    className="w-full"
+                  />
                 </div>
               </div>
             </motion.div>

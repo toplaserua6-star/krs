@@ -53,10 +53,10 @@ export function Navigation() {
                 </a>
               ))}
               <a
-                href="#pricing"
+                href="#order-form"
                 className="bg-gradient-to-r from-blue-600 to-purple-600 text-white px-6 py-2 rounded-full text-sm font-semibold hover:shadow-lg transform hover:scale-105 transition-all"
               >
-                💳 Оплатить $33
+                💳 Оплатить $11
               </a>
             </div>
           </div>
@@ -88,11 +88,11 @@ export function Navigation() {
               </a>
             ))}
             <a
-              href="#pricing"
+              href="#order-form"
               className="bg-gradient-to-r from-blue-600 to-purple-600 text-white block px-6 py-3 rounded-full text-center font-semibold mt-4"
               onClick={() => setIsMobileMenuOpen(false)}
             >
-              💳 Оплатить $33
+              💳 Оплатить $11
             </a>
           </div>
         </div>

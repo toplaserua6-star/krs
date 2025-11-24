@@ -12,7 +12,7 @@ interface PaymentButtonProps {
 }
 
 export function PaymentButton({
-  text = '💳 Оплатить курс $33',
+  text = '💳 Оплатить курс $11',
   variant = 'primary',
   size = 'lg',
   showIcon = true,

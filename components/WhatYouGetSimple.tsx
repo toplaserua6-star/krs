@@ -68,9 +68,7 @@ export function WhatYouGetSimple() {
           className="mt-12 text-center"
         >
           <a
-            href="https://t.me/tribute/app?startapp=pm9H"
-            target="_blank"
-            rel="noopener noreferrer"
+            href="#order-form"
             className="inline-block bg-gradient-to-r from-red-600 to-orange-600 text-white px-12 py-5 rounded-full text-xl font-bold hover:shadow-2xl transform hover:scale-105 transition-all"
           >
             Получить доступ сейчас →

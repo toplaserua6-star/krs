@@ -29,19 +29,35 @@ export function Footer() {
           <div>
             <h4 className="text-white font-semibold mb-4">Поддержка</h4>
             <ul className="space-y-2 text-sm">
-              <li><a href="#" className="hover:text-white transition-colors">Политика конфиденциальности</a></li>
-              <li><a href="#" className="hover:text-white transition-colors">Условия использования</a></li>
-              <li><a href="#" className="hover:text-white transition-colors">Возврат средств</a></li>
-              <li><a href="#" className="hover:text-white transition-colors">Контакты</a></li>
+              <li>
+                <a href="/public-offer" className="hover:text-white transition-colors">
+                  Публичная оферта
+                </a>
+              </li>
+              <li>
+                <a href="/privacy-policy" className="hover:text-white transition-colors">
+                  Политика конфиденциальности
+                </a>
+              </li>
+              <li>
+                <a href="/refund-policy" className="hover:text-white transition-colors">
+                  Политика возвратов
+                </a>
+              </li>
+              <li>
+                <a href="mailto:superpromtskurs@gmail.com" className="hover:text-white transition-colors">
+                  Контакты
+                </a>
+              </li>
             </ul>
           </div>
 
           <div>
             <h4 className="text-white font-semibold mb-4">Связаться с нами</h4>
             <div className="space-y-3">
-              <a href="mailto:info@chatgpt-course.ru" className="flex items-center gap-2 text-sm hover:text-white transition-colors">
+              <a href="mailto:superpromtskurs@gmail.com" className="flex items-center gap-2 text-sm hover:text-white transition-colors">
                 <Mail className="w-4 h-4" />
-                info@chatgpt-course.ru
+                superpromtskurs@gmail.com
               </a>
               <a href="#" className="flex items-center gap-2 text-sm hover:text-white transition-colors">
                 <MessageCircle className="w-4 h-4" />

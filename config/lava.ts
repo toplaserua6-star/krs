@@ -12,6 +12,7 @@
 
 // TODO: Замените на ваш реальный ID виджета из Lava.top
 export const LAVA_WIDGET_ID = 'ac7bb94f-665f-4001-bce6-df8894bb4129'
+export const LAVA_PRODUCT_URL = 'https://app.lava.top/products/7a79367f-21ef-4ad4-a7a6-e2d268886aa4'
 
 // URL виджета Lava.top
 export const LAVA_WIDGET_URL = `https://widget.lava.top/${LAVA_WIDGET_ID}`

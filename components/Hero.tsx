@@ -2,7 +2,7 @@
 
 import { motion } from 'framer-motion'
 import { Sparkles, ArrowRight, Play } from 'lucide-react'
-import { LavaPaymentWidget } from './LavaPaymentWidget'
+import { OrderForm } from './OrderForm'
 
 export function Hero() {
   return (
@@ -52,11 +52,10 @@ export function Hero() {
               transition={{ delay: 0.4 }}
               className="text-xl md:text-2xl text-gray-600 mb-6 leading-relaxed"
             >
-              <span className="font-bold text-gray-900">ОБНОВЛЯЕМЫЙ мастер-класс</span> для предпринимателей, маркетологов и экспертов
+              <span className="font-bold text-gray-900">SUPER PROMPTS PACK</span> — свежие и регулярно пополняемые сценарии для предпринимателей,
+              маркетологов и экспертов.
               <br />
-              <span className="font-bold text-blue-600">ДЛЯ ТОГО, чтобы ИСПОЛЬЗОВАТЬ CHATGPT НА УРОВНЕ PRO</span>
-              <br />
-              для анализа ЦА, создания контента, воронок, маркетинга и продаж
+              <span className="font-bold text-blue-600">Используйте ChatGPT на уровне PRO</span> для анализа ЦА, контента, воронок и продаж без рутины.
             </motion.p>
 
             <motion.div
@@ -76,7 +75,7 @@ export function Hero() {
               transition={{ delay: 0.5 }}
               className="flex flex-col items-center lg:items-start"
             >
-              <LavaPaymentWidget width={300} height={100} className="mb-4" />
+              <OrderForm source="hero" className="w-full" defaultOpen formId="order-form" />
             </motion.div>
 
             <motion.div

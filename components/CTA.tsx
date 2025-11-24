@@ -2,7 +2,7 @@
 
 import { motion } from 'framer-motion'
 import { ArrowRight, Sparkles } from 'lucide-react'
-import { LavaPaymentWidget } from './LavaPaymentWidget'
+import { OrderForm } from './OrderForm'
 
 export function CTA() {
   return (
@@ -41,13 +41,18 @@ export function CTA() {
             свою работу с помощью искусственного интеллекта
           </p>
 
-          <div className="flex flex-col items-center mb-8">
-            <LavaPaymentWidget width={300} height={100} className="mb-6" />
+          <div className="flex flex-col items-center mb-8 w-full">
+            <OrderForm source="cta" className="w-full" />
             <a
               href="#how-it-works"
-              className="text-white border-2 border-white px-10 py-5 rounded-full text-lg font-bold hover:bg-white hover:text-blue-600 transition-all"
+              className="group relative mt-6 inline-flex items-center gap-2 text-white px-10 py-4 rounded-full text-lg font-bold overflow-hidden"
             >
-              Узнать подробнее
+              <span className="absolute inset-0 rounded-full border border-white/30 group-hover:border-white/80 transition-all" />
+              <span className="absolute inset-0 bg-gradient-to-r from-white/0 via-white/30 to-white/0 opacity-60 group-hover:opacity-90 blur-2xl transition-opacity" />
+              <span className="relative flex items-center gap-2">
+                Узнать подробнее
+                <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
+              </span>
             </a>
           </div>
 

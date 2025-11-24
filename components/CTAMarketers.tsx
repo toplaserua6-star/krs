@@ -2,7 +2,7 @@
 
 import { motion } from 'framer-motion'
 import { ArrowRight, Sparkles } from 'lucide-react'
-import { LavaPaymentWidget } from './LavaPaymentWidget'
+import { OrderForm } from './OrderForm'
 
 export function CTAMarketers() {
   return (
@@ -36,7 +36,7 @@ export function CTAMarketers() {
             Получи полный набор<br />
             <span className="text-yellow-300">Super Prompts for Marketers</span>
             <br />
-            всего за $33
+            всего за $11
           </h2>
 
           <p className="text-xl md:text-2xl mb-10 text-white/90 leading-relaxed">
@@ -50,9 +50,9 @@ export function CTAMarketers() {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.5, delay: 0.2 }}
-            className="flex flex-col items-center mb-8"
+            className="flex flex-col items-center mb-8 w-full"
           >
-            <LavaPaymentWidget width={300} height={100} />
+            <OrderForm source="cta-marketers" className="w-full" />
           </motion.div>
 
           <div className="flex items-center justify-center gap-8 text-sm flex-wrap">

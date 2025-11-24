@@ -91,9 +91,7 @@ export function HowItWorks() {
           className="mt-16 text-center"
         >
           <a
-            href="https://t.me/tribute/app?startapp=pm9H"
-            target="_blank"
-            rel="noopener noreferrer"
+            href="#order-form"
             className="inline-block bg-gradient-to-r from-blue-600 to-purple-600 text-white px-10 py-4 rounded-full text-lg font-bold hover:shadow-2xl transform hover:scale-105 transition-all"
           >
             Получить Мощные Промпты

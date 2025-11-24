@@ -2,7 +2,7 @@
 
 import { motion } from 'framer-motion'
 import { ArrowRight, Sparkles } from 'lucide-react'
-import { LavaPaymentWidget } from './LavaPaymentWidget'
+import { OrderForm } from './OrderForm'
 
 export function HeroMarketers() {
   return (
@@ -59,9 +59,9 @@ export function HeroMarketers() {
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: 0.5 }}
-              className="flex flex-col items-center"
+              className="flex flex-col items-center w-full"
             >
-              <LavaPaymentWidget width={300} height={100} />
+              <OrderForm source="marketers" className="w-full" />
             </motion.div>
           </motion.div>
         </div>

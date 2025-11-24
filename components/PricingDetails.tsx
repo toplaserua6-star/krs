@@ -67,10 +67,10 @@ export function PricingDetails() {
 
             <div className="text-center mb-8">
               <div className="flex items-center justify-center gap-4 mb-4">
-                <span className="text-3xl text-gray-400 line-through">{'$66'}</span>
+                <span className="text-3xl text-gray-400 line-through">{'$22'}</span>
                 <TrendingDown className="w-8 h-8 text-red-400" />
                 <span className="text-6xl font-black bg-gradient-to-r from-yellow-400 to-orange-400 bg-clip-text text-transparent">
-                  {'$33'}
+                  {'$11'}
                 </span>
               </div>
               <p className="text-red-400 font-bold text-xl animate-pulse">
